@@ -1,15 +1,14 @@
 A meta-layer to collect common changes to upstream recipes and configs
-that better suit my preferences.
 
-Used with the following boards in my build farm
+Currently used in a build-farm for the following boards
 
 * Beaglebones (BBB,BBBW, BBG, BBGW)
 * Gumstix Duovero
 * Raspberry Pi, all flavors, but most testing on RPi4, RPi3 and RPi0-W 
 * Odroid-C2 
 * Lenovo S10e netbook
-* Xilinx zynq7 and zynqmp
 * Wandboard
+* Xilinx (zynq7 and zynqmp)
 
 
 This layer depends on:
