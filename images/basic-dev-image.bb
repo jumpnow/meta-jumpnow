@@ -136,4 +136,4 @@ ROOTFS_POSTPROCESS_COMMAND += " \
     create_opt_dir ; \
 "
 
-export IMAGE_BASENAME = "console-image"
+export IMAGE_BASENAME = "basic-dev-image"
