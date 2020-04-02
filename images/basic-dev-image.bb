@@ -21,7 +21,7 @@ KERNEL_EXTRA = " \
 
 WIREGUARD = " \
     wireguard-init \
-    wireguard-module \
+    ${@bb.utils.contains('WIREGUARD_COMPAT', '1', 'wireguard-module', '', d)} \
     wireguard-tools \
 "
 
