@@ -97,8 +97,6 @@ IMAGE_INSTALL += " \
     ${DEV_SDK} \
     ${EXTRA_TOOLS} \
     ${KERNEL_EXTRA} \
-    ${SECURITY_TOOLS} \
-    ${WIREGUARD} \
 "
 
 IMAGE_FILE_BLACKLIST += " \
