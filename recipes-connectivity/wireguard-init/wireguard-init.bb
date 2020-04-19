@@ -9,7 +9,7 @@ S = "${WORKDIR}"
 
 inherit update-rc.d
 INITSCRIPT_NAME = "wireguard"
-INITSCRIPT_PARAMS = "start 70 S ."
+INITSCRIPT_PARAMS = "start 70 5 ."
 
 do_install() {
     install -d ${D}${sysconfdir}/init.d
