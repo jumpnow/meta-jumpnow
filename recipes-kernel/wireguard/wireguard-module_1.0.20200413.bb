@@ -12,8 +12,7 @@ LIC_FILES_CHKSUM = "file://../COPYING;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 
 SRC_URI = "https://git.zx2c4.com/wireguard-linux-compat/snapshot/wireguard-linux-compat-${PV}.tar.xz"
 
-SRC_URI[md5sum] = "f553dd985e748f7df37ff2da942adac5"
-SRC_URI[sha256sum] = "7dfb4a8315e1d6ae406ff32d01c496175df558dd65968a19e5222d02c7cfb77a"
+SRC_URI[sha256sum] = "fb9e91968f6db6fd8e25a196a342e1f57ad141a52344d7550bffeea0a36456d2"
 
 inherit module kernel-module-split
 

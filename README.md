@@ -14,13 +14,13 @@ Currently used in a build-farm for the following boards
 This layer depends on:
 
     URI: git://git.yoctoproject.org/poky.git
-    branch: zeus 
+    branch: dunfell 
 
     URI: git://git.openembedded.org/meta-openembedded
-    branch: zeus 
+    branch: dunfell 
 
     URI: git://git.yoctoproject.org/meta-security.git
-    branch: zeus 
+    branch: dunfell 
 
 
 meta-jumpnow layer maintainer: Scott Ellis <scott@jumpnowtek.com>

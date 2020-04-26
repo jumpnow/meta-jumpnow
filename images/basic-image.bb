@@ -15,41 +15,6 @@ CORE_OS = " \
 
 KERNEL_EXTRA = " \
     kernel-modules \
-    load-modules \
-"
-
-WIREGUARD = " \
-    wireguard-init \
-    ${@bb.utils.contains('WIREGUARD_COMPAT', '1', 'wireguard-module', '', d)} \
-    wireguard-tools \
-"
-
-DEV_SDK = " \
-    binutils \
-    binutils-symlinks \
-    coreutils \
-    cpp \
-    cpp-symlinks \
-    diffutils \
-    elfutils elfutils-binutils \
-    file \
-    gcc \
-    gcc-symlinks \
-    g++ \
-    g++-symlinks \
-    gdb \
-    gettext \
-    git \
-    ldd \
-    libstdc++ \
-    libstdc++-dev \
-    libtool \
-    ltrace \
-    make \
-    perl-modules \
-    pkgconfig \
-    python3-modules \
-    strace \
 "
 
 EXTRA_TOOLS = " \
@@ -60,7 +25,6 @@ EXTRA_TOOLS = " \
     ethtool \
     fbset \
     findutils \
-    firewall \
     grep \
     i2c-tools \
     ifupdown \
@@ -69,8 +33,6 @@ EXTRA_TOOLS = " \
     iptables \
     less \
     lsof \
-    netcat-openbsd \
-    nmap \
     ntp ntp-tickadj \
     parted \
     procps \
@@ -84,16 +46,8 @@ EXTRA_TOOLS = " \
     zip \
 "
 
-SECURITY_TOOLS = " \
-    checksec \
-    ncrack \
-    nikto \
-    python3-scapy \
-"
-
 IMAGE_INSTALL += " \
     ${CORE_OS} \
-    ${DEV_SDK} \
     ${EXTRA_TOOLS} \
     ${KERNEL_EXTRA} \
 "
@@ -133,4 +87,4 @@ ROOTFS_POSTPROCESS_COMMAND += " \
     create_opt_dir ; \
 "
 
-export IMAGE_BASENAME = "basic-dev-image"
+export IMAGE_BASENAME = "basic-image"
