@@ -15,7 +15,6 @@ CORE_OS = " \
 
 KERNEL_EXTRA = " \
     kernel-modules \
-    load-modules \
 "
 
 WIREGUARD = " \
