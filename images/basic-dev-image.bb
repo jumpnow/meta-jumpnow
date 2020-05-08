@@ -14,9 +14,7 @@ CORE_OS = " \
 "
 
 KERNEL_EXTRA = " \
-    cryptodev-module \
     kernel-modules \
-    load-modules \
 "
 
 WIREGUARD = " \
