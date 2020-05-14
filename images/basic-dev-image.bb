@@ -59,7 +59,6 @@ EXTRA_TOOLS = " \
     ethtool \
     fbset \
     findutils \
-    firewall \
     grep \
     i2c-tools \
     ifupdown \
