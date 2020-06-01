@@ -19,7 +19,9 @@ KERNEL_EXTRA = " \
 
 EXTRA_TOOLS = " \
     bzip2 \
+    coreutils \
     curl \
+    diffutils \
     dosfstools \
     e2fsprogs-mke2fs \
     ethtool \
