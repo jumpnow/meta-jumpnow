@@ -36,7 +36,6 @@ DEV_SDK = " \
     gcc-symlinks \
     g++ \
     g++-symlinks \
-    gdb \
     gettext \
     git \
     ldd \
