@@ -12,7 +12,7 @@ LIC_FILES_CHKSUM = "file://../COPYING;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 
 SRC_URI = "https://git.zx2c4.com/wireguard-linux-compat/snapshot/wireguard-linux-compat-${PV}.tar.xz"
 
-SRC_URI[sha256sum] = "690c7d9e115e2ff27386811cb495c9784678f717c8d6fc4cc7469dce373f252e"
+SRC_URI[sha256sum] = "ad33b2d2267a37e0f65c97e65e7d4d926d5aef7d530c251b63fbf919048eead9"
 
 inherit module kernel-module-split
 
@@ -29,14 +29,6 @@ RRECOMMENDS_${PN} = "kernel-module-xt-hashlimit"
 MODULE_NAME = "wireguard"
 
 S = "${WORKDIR}/wireguard-linux-compat-${PV}/src"
-
-
-# Kernel module packages MUST begin with 'kernel-module-', otherwise
-# multilib image generation can fail.
-#
-# The following line is only necessary if the recipe name does not begin
-# with kernel-module-.
-PKG_${PN} = "kernel-module-${MODULE_NAME}"
 
 module_do_install() {
     install -d ${D}${nonarch_base_libdir}/modules/${KERNEL_VERSION}/kernel/${MODULE_NAME}
