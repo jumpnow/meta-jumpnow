@@ -17,6 +17,10 @@ KERNEL_EXTRA = " \
     kernel-modules \
 "
 
+CRYPTO = " \
+    chacha-dec chacha-enc \
+"
+
 WIREGUARD = " \
     wireguard-init \
     ${@bb.utils.contains('WIREGUARD_COMPAT', '1', 'wireguard-module', '', d)} \
