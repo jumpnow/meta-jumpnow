@@ -18,8 +18,8 @@ KERNEL_EXTRA = " \
 "
 
 CRYPTO = " \
-    aesgcm-dec aesgcm-enc \
-    chacha-dec chacha-enc \
+    aesgcm \
+    chacha \
 "
 
 WIREGUARD = " \

@@ -1,4 +1,4 @@
-SUMMARY = "chacha20poly1305 decrypt utility"
+SUMMARY = "aes-gcm crypto utilities"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 
@@ -6,10 +6,8 @@ DEPENDS += "go-dep-native"
 
 inherit go
 
-GO_IMPORT = "github.com/scottellis/chacha-dec"
+GO_IMPORT = "github.com/scottellis/${PN}"
 SRC_URI = "git://${GO_IMPORT};rev=${PV}"
-
-GO_INSTALL = "${GO_IMPORT}/."
 
 GO_LINKSHARED = ""
 
