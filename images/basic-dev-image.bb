@@ -17,11 +17,6 @@ KERNEL_EXTRA = " \
     kernel-modules \
 "
 
-CRYPTO = " \
-    aesgcm \
-    chacha \
-"
-
 WIREGUARD = " \
     wireguard-init \
     ${@bb.utils.contains('WIREGUARD_COMPAT', '1', 'wireguard-module', '', d)} \
@@ -76,7 +71,6 @@ EXTRA_TOOLS = " \
     ntp ntp-tickadj \
     parted \
     procps \
-    rndaddtoentcnt \
     sysfsutils \
     tcpdump \
     util-linux \
