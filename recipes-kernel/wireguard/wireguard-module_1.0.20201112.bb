@@ -12,11 +12,10 @@ LIC_FILES_CHKSUM = "file://../COPYING;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 
 SRC_URI = "https://git.zx2c4.com/wireguard-linux-compat/snapshot/wireguard-linux-compat-${PV}.tar.xz"
 
-SRC_URI[sha256sum] = "ad33b2d2267a37e0f65c97e65e7d4d926d5aef7d530c251b63fbf919048eead9"
+SRC_URI[sha256sum] = "89eae7f0c0bd6c8df3ba2e090984974ff68741a9f26aa0922890f8ca727897e1"
 
 inherit module kernel-module-split
 
-#DEPENDS = "virtual/kernel bc-native libmnl"
 DEPENDS = "virtual/kernel libmnl"
 
 EXTRA_OEMAKE_append = " \
