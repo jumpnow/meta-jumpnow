@@ -1,6 +1,6 @@
 A meta-layer to collect common changes to upstream recipes and configs
 
-Currently used in a build-farm for the following boards
+Currently used for the following boards
 
 * Beaglebones (BBB,BBBW, BBG, BBGW)
 * Gumstix Duovero
@@ -8,19 +8,19 @@ Currently used in a build-farm for the following boards
 * Odroid-C2 
 * Lenovo S10e netbook
 * Wandboard
-* Xilinx (zynq7 and zynqmp)
+* Xilinx (zynq7)
 
 
 This layer depends on:
 
     URI: git://git.yoctoproject.org/poky.git
-    branch: dunfell 
+    branch: gatesgarth 
 
     URI: git://git.openembedded.org/meta-openembedded
-    branch: dunfell 
+    branch: gatesgarth 
 
     URI: git://git.yoctoproject.org/meta-security.git
-    branch: dunfell 
+    branch: gatesgarth 
 
 
 meta-jumpnow layer maintainer: Scott Ellis <scott@jumpnowtek.com>
